@@ -18,27 +18,32 @@ public class Main {
                     stack.push(ch);
                     break;
                 case '}':
-                    if (!stack.empty()){
+                    if (!stack.empty()) {
                         if (!(stack.pop().toString().charAt(0) == '{')) {
                             isOk = false;
-                        }} else isOk = false;
+                        }
+                    } else isOk = false;
                     break;
                 case ']':
-                    if (!stack.empty()){
+                    if (!stack.empty()) {
                         if (!(stack.pop().toString().charAt(0) == '[')) {
                             isOk = false;
-                        }} else isOk = false;
+                        }
+                    } else isOk = false;
                     break;
                 case ')':
-                    if (!stack.empty()){
+                    if (!stack.empty()) {
                         if (!(stack.pop().toString().charAt(0) == '(')) {
                             isOk = false;
-                        }} else isOk = false;
+                        }
+                    } else isOk = false;
                     break;
                 default: isOk = false;
             }
         }
-        if (isOk && stack.empty()) System.out.println("Все верно!");
-        else System.out.println("Ошибка :(");
+        if (isOk && stack.empty())
+            System.out.println("Все верно!");
+        else
+            System.out.println("Ошибка :(");
     }
 }
