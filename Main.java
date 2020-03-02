@@ -9,8 +9,8 @@ public class Main {
         String brackets = in.next();
         Stack stack = new Stack();
         boolean isOk = true;
-        for (int i = 0; i < brackets.length(); i++) {  // начинаем последовательно считывать
-            char ch = brackets.charAt(i);              // считывание символа
+        for (int i = 0; i < brackets.length(); i++) {
+            char ch = brackets.charAt(i);
             switch (ch) {
                 case '{':
                 case '[':
